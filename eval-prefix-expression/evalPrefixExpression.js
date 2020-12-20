@@ -175,3 +175,9 @@ console.log(evalPreFixPrev('* * * 2 2 1'))
 console.log(evalPreFixPrev('+ 1 2 * 5'))
 console.log(evalPreFixPrev('+ 1 x', {x:2}))
 console.log(evalPreFixPrev('+ 1 x'))
+
+// Misc Thoughts
+// 1st solution I came up with is the previous solution written here where I solve the problem using stacks.
+// 2nd solution I thought up was adding stacks in the stacks to simulate nested expressions, but quickly gave up on that because at that time I could not figure out a method to do 3 levels of nesting.
+// 3rd solution I thought up was making an object having the operator as key and nesting the expression values in it, this is similar to the tree structure in the first solution but I could not think of how I could solely use operators as keys and the numbers as values.
+// 4th solution is this tree structure which I say was easy to imagine and implement.
